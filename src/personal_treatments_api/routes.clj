@@ -5,6 +5,5 @@
 
 (def greeting
   (route/expand-routes
-    #{["/greet" :get greeting/respond-hello :route-name :greet]
-      ["/medicines" :get medicines/list! :route-name :list-medicines]
+    #{["/medicines" :get medicines/list! :route-name :list-medicines]
       ["/medicines" :post medicines/create! :route-name :create-medicine]}))
